@@ -1,34 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
 <!--        Top Bar-->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_bar">
 
-            <include layout="@layout/layout_top_tab"/>
-
-        </RelativeLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab"
+        android:background="@drawable/white_grey_border"/>
+    </com.google.android.material.appbar.AppBarLayout>
 
 <!--        Middle Bar -->
-        <RelativeLayout
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="615dp"
+            android:layout_below="@+id/top_bar">
 
-
-        </RelativeLayout>
+        </androidx.viewpager2.widget.ViewPager2>
 
 <!--        Lower Control Pannel -->
-    </RelativeLayout>
-            
 
-</android.support.design.widget.CoordinatorLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_grey_border"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation" />
+
+    </RelativeLayout>

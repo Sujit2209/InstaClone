@@ -6,16 +6,17 @@
         android:layout_height="50dp"
         android:layout_alignParentTop="true">
 
-        <android.support.design.widget.AppBarLayout
+        <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.Toolbar
+            <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/tab"/>
+                android:id="@+id/tab"
+                android:background="@drawable/white_grey_border"/>
 
-        </android.support.design.widget.AppBarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
 
     </RelativeLayout>
 

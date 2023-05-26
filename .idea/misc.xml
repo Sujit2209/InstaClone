@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/white_grey_border.xml" value="0.1535" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/layout_bottom_navigation.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/layout/layout_centre.xml" value="0.25" />
         <entry key="app/src/main/res/layout/layout_top_tab.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/white_grey_border.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.2947916666666667" />
       </map>
     </option>
   </component>
